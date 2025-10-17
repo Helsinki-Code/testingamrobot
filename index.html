@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynthAI - The Future of AI-Powered Solutions</title>
+    <style>
+        /* General Styling */
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #bbbbbb;
+            --background-color: #0c0a18;
+            --accent-color: #8a2be2;
+            --card-background: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(12, 10, 24, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, #8a2be2, #4a00e0);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ffffff, #bbbbbb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--secondary-color);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--card-background);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+        }
+        
+        .testimonial-card {
+            background: var(--card-background);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-card {
+            background: var(--card-background);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-card.popular {
+            border-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 18px;
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 50px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header container">
+        <a href="#" class="logo">SynthAI</a>
+        <nav class="nav">
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+        <a href="#" class="cta-button">Get Started</a>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero container">
+            <h1>The Future of AI-Powered Solutions</h1>
+            <p>SynthAI provides cutting-edge artificial intelligence to help automate your business processes and drive growth.</p>
+            <a href="#pricing" class="cta-button">Choose Your Plan</a>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features container">
+            <h2 class="section-title">Why SynthAI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Advanced Machine Learning</h3>
+                    <p>Our models are trained on vast datasets to provide the most accurate predictions and insights.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Seamless Integration</h3>
+                    <p>Easily integrate SynthAI with your existing tools and workflows through our robust API.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Real-time Analytics</h3>
+                    <p>Monitor your AI-driven operations with a live dashboard and comprehensive analytics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-card">
+                <p>"SynthAI has transformed our data analysis capabilities. We can now make smarter decisions faster than ever before."</p>
+                <p class="testimonial-author">- Jane Doe, CEO of TechCorp</p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="price">$49<span>/mo</span></p>
+                    <ul>
+                        <li>Basic AI Model Access</li>
+                        <li>10,000 API Calls/mo</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <a href="#" class="cta-button">Choose Starter</a>
+                </div>
+                <div class="pricing-card popular">
+                    <h3>Pro</h3>
+                    <p class="price">$99<span>/mo</span></p>
+                    <ul>
+                        <li>Advanced AI Model Access</li>
+                        <li>50,000 API Calls/mo</li>
+                        <li>Priority Email Support</li>
+                    </ul>
+                    <a href="#" class="cta-button">Choose Pro</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Contact Us</p>
+                    <ul>
+                        <li>Custom AI Models</li>
+                        <li>Unlimited API Calls</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <a href="#" class="cta-button">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <p>&copy; 2025 SynthAI. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
