@@ -299,6 +299,27 @@
             });
         });
     </script>
+    <script>
+  (function() {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://amro-knows-all.lovable.app/widget/e2c66887-62fa-455c-9618-8c6fe0861b0d';
+    iframe.style.position = 'fixed';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.border = 'none';
+    iframe.style.zIndex = '999999';
+    iframe.style.pointerEvents = 'none';
+    iframe.onload = function() {
+      iframe.contentWindow.postMessage('chatbot-ready', '*');
+    };
+    document.body.appendChild(iframe);
+    
+    // Allow iframe interaction
+    iframe.style.pointerEvents = 'auto';
+  })();
+</script>
 
 </body>
 </html>
